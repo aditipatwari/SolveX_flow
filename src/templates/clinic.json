@@ -1,0 +1,33 @@
+{
+  "id": "clinic",
+  "name": "Clinic",
+  "title": "SolveX Medical",
+  "icon": "Activity",
+  "terminology": {
+    "customer": "Patient",
+    "technician": "Doctor",
+    "service": "Appointment",
+    "servicePlural": "Appointments"
+  },
+  "workflowStages": [
+    "Check-in Reception",
+    "Vitals Triage",
+    "Consultation",
+    "Check-out & RX"
+  ],
+  "automationRules": [
+    { "title": "Check-out Completed", "desc": "E-prescribe medical scripts to pharmacy, push insurance claim file, send survey link." },
+    { "title": "Missed Appointment Rule", "desc": "If patient is 15 minutes late, flag as no-show and auto-schedule a follow-up link." }
+  ],
+  "aiSuggestions": [
+    { "type": "warning", "title": "Triage Delay Detected", "message": "Average vitals wait time has exceeded 12 minutes. Dr. Dave Miller is available to consult triage backlog." },
+    { "type": "info", "title": "Preventive Care Outreach", "message": "Identify patients due for annual wellness checks and trigger automated scheduling alerts." }
+  ],
+  "dashboardCards": {
+    "todayLabel": "Today's Patients",
+    "activeLabel": "In Exam Rooms",
+    "revenueLabel": "Co-Pay Totals",
+    "completedLabel": "Appointments Completed",
+    "satisfactionLabel": "Patient Satisfaction"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "salon",
+  "name": "Salon",
+  "title": "SolveX Salon & Spa",
+  "icon": "Smile",
+  "terminology": {
+    "customer": "Client",
+    "technician": "Stylist",
+    "service": "Session",
+    "servicePlural": "Sessions"
+  },
+  "workflowStages": [
+    "Booking Confirmed",
+    "Arrival & Wash",
+    "Styling Treatment",
+    "Check-out & Review"
+  ],
+  "automationRules": [
+    { "title": "Check-out Completed", "desc": "Process salon payment, send loyalty points summary SMS, and prompt review link." },
+    { "title": "Re-booking Trigger", "desc": "Send a styling offer voucher 4 weeks after hair treatments to encourage repeat bookings." }
+  ],
+  "aiSuggestions": [
+    { "type": "warning", "title": "Stylist Overbook Warning", "message": "Sarah Connor has back-to-back balayage appointments. Recommend extending slots." },
+    { "type": "info", "title": "Upsell Suggestion", "message": "Suggest hair moisture mask treatments to clients booked for bleach washes." }
+  ],
+  "dashboardCards": {
+    "todayLabel": "Today's Sessions",
+    "activeLabel": "Clients in Chairs",
+    "revenueLabel": "Styling Sales",
+    "completedLabel": "Sessions Done",
+    "satisfactionLabel": "Client Feedback"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "acService",
+  "name": "AC Service",
+  "title": "SolveX HVAC",
+  "icon": "Wind",
+  "terminology": {
+    "customer": "Customer",
+    "technician": "Technician",
+    "service": "Job",
+    "servicePlural": "Jobs"
+  },
+  "workflowStages": [
+    "Dispatch Prep",
+    "En Route",
+    "On-Site Diagnostics",
+    "Completed & Invoiced"
+  ],
+  "automationRules": [
+    { "title": "Job Completed", "desc": "Process Stripe billing, automatically email customer receipt, schedule follow-up." },
+    { "title": "Critical Urgent Escalation", "desc": "Notify service manager on pager if emergency dispatch delay exceeds 30 minutes." }
+  ],
+  "aiSuggestions": [
+    { "type": "warning", "title": "GPS Dispatch Route Alert", "message": "High traffic on HWY-101. Re-routing Dave Miller could save 20 minutes." },
+    { "type": "info", "title": "Technician Capacity Recommendation", "message": "Sarah Connor has finished her workorder early. Consider assigning Charlie's filter replacement to her." }
+  ],
+  "dashboardCards": {
+    "todayLabel": "Today's Jobs",
+    "activeLabel": "Active Dispatches",
+    "revenueLabel": "Revenue Today",
+    "completedLabel": "Jobs Completed",
+    "satisfactionLabel": "Customer Satisfaction"
+  }
+}

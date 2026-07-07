@@ -1,0 +1,33 @@
+{
+  "id": "pestControl",
+  "name": "Pest Control",
+  "title": "SolveX Pest Care",
+  "icon": "ShieldAlert",
+  "terminology": {
+    "customer": "Customer",
+    "technician": "Specialist",
+    "service": "Treatment",
+    "servicePlural": "Treatments"
+  },
+  "workflowStages": [
+    "Initial Assessment",
+    "Chemical Application",
+    "Eradication Scan",
+    "Clearance Verified"
+  ],
+  "automationRules": [
+    { "title": "Treatment Completed", "desc": "Send inspection receipt, schedule feedback survey, and queue follow-up inspection in 14 days." },
+    { "title": "Chemical Threshold Notification", "desc": "Log pesticide dosage and trigger environmental compliance sheet generation." }
+  ],
+  "aiSuggestions": [
+    { "type": "danger", "title": "Missed follow-up hazard", "message": "Charlie's home is due for a 14-day termite check. Overdue by 48 hours." },
+    { "type": "info", "title": "Route Optimisation suggest", "message": "Group 3 fumigations in Westside Zone under Specialist Dave Miller." }
+  ],
+  "dashboardCards": {
+    "todayLabel": "Today's Treatments",
+    "activeLabel": "Active Sprayings",
+    "revenueLabel": "Pest Revenue",
+    "completedLabel": "Treatments Cleared",
+    "satisfactionLabel": "Safety Satisfaction"
+  }
+}

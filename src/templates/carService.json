@@ -1,0 +1,33 @@
+{
+  "id": "carService",
+  "name": "Car Service",
+  "title": "SolveX Auto Care",
+  "icon": "Car",
+  "terminology": {
+    "customer": "Client",
+    "technician": "Mechanic",
+    "service": "Repair",
+    "servicePlural": "Repairs"
+  },
+  "workflowStages": [
+    "Intake Inspection",
+    "OBD diagnostics",
+    "Repair & Tune-up",
+    "Road Test & Delivery"
+  ],
+  "automationRules": [
+    { "title": "Road Test Completed", "desc": "Mark repair order closed, email digital safety inspection chart, trigger final invoice." },
+    { "title": "Parts Delay Escalation", "desc": "If replacement alternator delay exceeds 2 hours, notify customer and offer discount." }
+  ],
+  "aiSuggestions": [
+    { "type": "warning", "title": "Bay Allocation Blockage", "message": "Bay 3 is occupied by Bob's long-running transmission overhaul. Recommend transferring diagnostics to Sarah." },
+    { "type": "info", "title": "Upcoming Service Prediction", "message": "Alice's vehicle is due for a 6-month oil check. Send pre-booking offer link." }
+  ],
+  "dashboardCards": {
+    "todayLabel": "Today's Repairs",
+    "activeLabel": "Vehicles in Bays",
+    "revenueLabel": "Garage Revenue",
+    "completedLabel": "Repairs Delivered",
+    "satisfactionLabel": "Client Net Score"
+  }
+}

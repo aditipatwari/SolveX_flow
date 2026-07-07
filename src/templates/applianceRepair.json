@@ -1,0 +1,33 @@
+{
+  "id": "applianceRepair",
+  "name": "Appliance Repair",
+  "title": "SolveX Repair",
+  "icon": "Wrench",
+  "terminology": {
+    "customer": "Client",
+    "technician": "Repair Tech",
+    "service": "Workorder",
+    "servicePlural": "Workorders"
+  },
+  "workflowStages": [
+    "Service Booked",
+    "Specialist Dispatched",
+    "Appliance Diagnostics",
+    "Repair Complete"
+  ],
+  "automationRules": [
+    { "title": "Repair Complete", "desc": "Process electronic signature, email invoice billing, and log replacement part warranty info." },
+    { "title": "Part Order Placement", "desc": "Trigger automated parts order request when stock counts fall below 5 for heating elements." }
+  ],
+  "aiSuggestions": [
+    { "type": "warning", "title": "Inventory Shortage Warning", "message": "Refrigerator fan motor parts are low. Dr. Dave Miller cannot complete Charlie's workorder today." },
+    { "type": "info", "title": "Warranty Reminder", "message": "Bob Marley has refrigerator warranty expiring in 30 days. Recommend sending renewal offers." }
+  ],
+  "dashboardCards": {
+    "todayLabel": "Today's Tickets",
+    "activeLabel": "Active Repairs",
+    "revenueLabel": "Service Sales",
+    "completedLabel": "Appliances Fixed",
+    "satisfactionLabel": "Review Ratings"
+  }
+}
