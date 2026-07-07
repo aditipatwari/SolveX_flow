@@ -26,7 +26,7 @@ export const PageHeader = ({
                   </span>
                 ) : (
                   <Link
-                    to={crumb.href || '#'}
+                    to={crumb.to || crumb.href || '#'}
                     className="hover:text-gray-600 transition-colors duration-150 truncate max-w-[120px] md:max-w-[200px]"
                   >
                     {crumb.label}

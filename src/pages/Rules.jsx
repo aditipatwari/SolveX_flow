@@ -241,7 +241,7 @@ export const Rules = () => {
         title="Automation Center"
         description="Build and manage event-triggered playbooks, webhook callbacks, and auto-dispatch rules."
         breadcrumbs={[
-          { label: 'SolveX Flow', href: '#' },
+          { label: 'SolveX Flow', to: '/' },
           { label: 'Automations', active: true }
         ]}
         actions={

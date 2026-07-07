@@ -26,7 +26,7 @@ import { Modal, ModalHeader, ModalTitle, ModalContent, ModalFooter } from '../co
 import { EmptyState } from '../components/EmptyState';
 
 export const Jobs = () => {
-  const { jobs, setJobs, customers, technicians } = useApp();
+  const { jobs, setJobs, customers, technicians, currentTemplate } = useApp();
   const { addNotification } = useNotifications();
   const navigate = useNavigate();
 
@@ -138,7 +138,7 @@ export const Jobs = () => {
         title={`${currentTemplate.terminology.servicePlural} & Dispatch Queue`}
         description={`Dispatch ${currentTemplate.terminology.technician.toLowerCase()}s, audit active SLAs, and manage ${currentTemplate.terminology.customer.toLowerCase()} service flows in real-time.`}
         breadcrumbs={[
-          { label: 'SolveX Flow', href: '#' },
+          { label: 'SolveX Flow', to: '/' },
           { label: currentTemplate.terminology.servicePlural, active: true }
         ]}
         actions={

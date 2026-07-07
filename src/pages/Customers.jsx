@@ -94,7 +94,7 @@ export const Customers = () => {
         title={`${currentTemplate.terminology.customer} Directory`}
         description={`Manage ${currentTemplate.terminology.customer.toLowerCase()} service profiles, history logs, and communication channels.`}
         breadcrumbs={[
-          { label: 'SolveX Flow', href: '#' },
+          { label: 'SolveX Flow', to: '/' },
           { label: currentTemplate.terminology.customer, active: true }
         ]}
         actions={

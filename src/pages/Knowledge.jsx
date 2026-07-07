@@ -408,7 +408,7 @@ export const Knowledge = () => {
           title="AI Knowledge Hub"
           description={`Browse and search dynamic corporate procedures, pricing lists, and FAQs for your ${currentTemplate.name} operations.`}
           breadcrumbs={[
-            { label: 'SolveX Flow', href: '#' },
+            { label: 'SolveX Flow', to: '/' },
             { label: 'Knowledge Base', active: true }
           ]}
         />

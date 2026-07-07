@@ -26,7 +26,7 @@ const PagePlaceholder = ({ title, icon, description }) => {
         title={title}
         description={`Configure and manage the ${title.toLowerCase()} configurations.`}
         breadcrumbs={[
-          { label: 'SolveX Flow', href: '#' },
+          { label: 'SolveX Flow', to: '/' },
           { label: title, active: true }
         ]}
       />

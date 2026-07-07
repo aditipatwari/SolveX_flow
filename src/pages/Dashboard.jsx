@@ -172,7 +172,7 @@ export const Dashboard = () => {
         title={`Welcome back, ${user.name.split(' ')[0]}`}
         description={`Here is what is happening in your ${currentTemplate.name} workspace today.`}
         breadcrumbs={[
-          { label: 'SolveX Flow', href: '#' },
+          { label: 'SolveX Flow', to: '/' },
           { label: 'Dashboard', active: true }
         ]}
         actions={

@@ -134,7 +134,7 @@ export const Showcase = () => {
         title="Design System Playground"
         description="A premium collection of reusable components built for SolveX Flow, inspired by Stripe and Linear UI styles."
         breadcrumbs={[
-          { label: 'SolveX Flow', href: '#' },
+          { label: 'SolveX Flow', to: '/' },
           { label: 'Design System', active: true }
         ]}
         actions={

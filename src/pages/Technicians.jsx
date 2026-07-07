@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   UserCheck,
   Plus,
@@ -114,7 +114,7 @@ export const Technicians = () => {
         title={`${currentTemplate.terminology.technician} Registry`}
         description={`Monitor ${currentTemplate.terminology.technician.toLowerCase()} availability schedules, workload distribution, and performance stats.`}
         breadcrumbs={[
-          { label: 'SolveX Flow', href: '#' },
+          { label: 'SolveX Flow', to: '/' },
           { label: currentTemplate.terminology.technician, active: true }
         ]}
         actions={
