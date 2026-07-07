@@ -52,6 +52,7 @@ function App() {
             <Routes>
               {/* Core dashboard route */}
               <Route path="/" element={<Dashboard />} />
+              <Route path="/dashboard" element={<Dashboard />} />
 
               {/* Design system showcase */}
               <Route path="/showcase" element={<Showcase />} />
@@ -60,8 +61,8 @@ function App() {
               <Route path="/jobs" element={<Jobs />} />
               <Route path="/workflow/:id" element={<Workflow />} />
               <Route path="/customers" element={<Customers />} />
-              <Route path="/technicians" element={<Technicians />} />
-              <Route path="/rules" element={<Rules />} />
+              <Route path="/specialists" element={<Technicians />} />
+              <Route path="/automation" element={<Rules />} />
               <Route path="/knowledge" element={<Knowledge />} />
               <Route
                 path="/settings"

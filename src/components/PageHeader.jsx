@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 import { cn } from '../utils/cn';
 
@@ -24,12 +25,12 @@ export const PageHeader = ({
                     {crumb.label}
                   </span>
                 ) : (
-                  <a
-                    href={crumb.href || '#'}
+                  <Link
+                    to={crumb.href || '#'}
                     className="hover:text-gray-600 transition-colors duration-150 truncate max-w-[120px] md:max-w-[200px]"
                   >
                     {crumb.label}
-                  </a>
+                  </Link>
                 )}
               </React.Fragment>
             ))}

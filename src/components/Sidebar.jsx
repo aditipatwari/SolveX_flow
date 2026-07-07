@@ -61,8 +61,8 @@ export const Sidebar = () => {
     { name: 'Dashboard', to: '/', icon: LayoutDashboard },
     { name: `${currentTemplate.terminology.servicePlural} & Dispatch`, to: '/jobs', icon: ClipboardList },
     { name: currentTemplate.terminology.customer, to: '/customers', icon: Users },
-    { name: currentTemplate.terminology.technician, to: '/technicians', icon: UserCheck },
-    { name: 'Automations', to: '/rules', icon: Zap },
+    { name: currentTemplate.terminology.technician, to: '/specialists', icon: UserCheck },
+    { name: 'Automations', to: '/automation', icon: Zap },
     { name: 'Settings', to: '/settings', icon: Settings },
   ];
 
